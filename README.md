@@ -1,10 +1,10 @@
-**本文章已授权微信公众号郭霖（guolin_blog）转载。**
+**感谢原作者的分享。本人从学习的角度Fork。**
 
 本文章讲解的内容是**MVC**、**MVP**、**MVVM**以及使用**MVVM**搭建**GitHub客户端**，以下是**框架**的**GitHub地址**：
 
-**Dagger2**版本：[Dagger2](https://github.com/TanJiaJunBeyond/AndroidGenericFramework)
+**Dagger2**版本：[Dagger2](https://github.com/carlshen/AndroidGenericFramework)
 
-**Koin**版本：[Koin](https://github.com/TanJiaJunBeyond/AndroidGenericFramework/tree/mvvm-koin)
+**Koin**版本：[Koin](https://github.com/carlshen/AndroidGenericFramework/tree/mvvm-koin)
 
 在讲解之前，我想先聊一下**MVC**、**MVP**和**MVVM**相关的概念。
 
@@ -81,15 +81,15 @@ interface AddEditTaskContract {
 
 **登录**：
 
-![LoginPage.png](https://github.com/TanJiaJunBeyond/AndroidGenericFramework/raw/master/screenshot/LoginPage.png)
+![LoginPage.png](https://github.com/carlshen/AndroidGenericFramework/raw/master/screenshot/LoginPage.png)
 
 **首页**：
 
-![MainPage.png](https://github.com/TanJiaJunBeyond/AndroidGenericFramework/raw/master/screenshot/MainPage.png)
+![MainPage.png](https://github.com/carlshen/AndroidGenericFramework/raw/master/screenshot/MainPage.png)
 
 **个人中心**：
 
-![PersonalCenterPage.png](https://github.com/TanJiaJunBeyond/AndroidGenericFramework/raw/master/screenshot/PersonalCenterPage.png)
+![PersonalCenterPage.png](https://github.com/carlshen/AndroidGenericFramework/raw/master/screenshot/PersonalCenterPage.png)
 
 ## 架构设计
 
@@ -99,7 +99,7 @@ interface AddEditTaskContract {
 
 **data**存放**数据**相关的代码，如图所示：
 
-![data.png](https://github.com/TanJiaJunBeyond/AndroidGenericFramework/raw/master/screenshot/data.png)
+![data.png](https://github.com/carlshen/AndroidGenericFramework/raw/master/screenshot/data.png)
 
 * **local**：**本地数据**，存放**本地存储逻辑（MMKV相关的逻辑）**，例如：**UserLocalDataSource（用户本地数据源）**。
 * **model**：**数据类**，存放**请求数据类（request）**和**响应数据类（response）**，例如：**LoginRequestData（登录请求数据类）**、**UserAccessTokenData（用户访问Token数据类）**、**UserInfoData（用户信息数据类）**、**ListData（基础的列表数据类）**和**Repository（GitHub仓库请求和响应数据类）**。
@@ -116,7 +116,7 @@ interface AddEditTaskContract {
 
 如图所示：
 
-![diDagger2.png](https://github.com/TanJiaJunBeyond/AndroidGenericFramework/raw/master/screenshot/diDagger2.png)
+![diDagger2.png](https://github.com/carlshen/AndroidGenericFramework/raw/master/screenshot/diDagger2.png)
 
 * **ApplicationComponent**：**Application组件**，将**AndroidSupportInjectionModule**、**ApplicationModule**、**NetworkModule**、**RepositoryModule**、**MainModule**、**UserModule**和**GitHubRepositoryModule**注入到**Application**。
 * **ApplicationModule**：提供**跟随Application生命周期**的业务**模块**，例如：**LocalDataSource（本地数据源）**和**RemoteDataSource（远程数据源）**。
@@ -131,7 +131,7 @@ interface AddEditTaskContract {
 
 如图所示：
 
-![diKoin.png](https://github.com/TanJiaJunBeyond/AndroidGenericFramework/raw/master/screenshot/diKoin.png)
+![diKoin.png](https://github.com/carlshen/AndroidGenericFramework/raw/master/screenshot/diKoin.png)
 
 * **ApplicationModule**：存放**ApplicationModule**、**NetworkModule**、**RepositoryModule**、**MainModule**、**UserModule**和**GitHubRepositoryModule**，并且生成**ApplicationModules**的**List**提供**Koin**使用。
 
@@ -139,7 +139,7 @@ interface AddEditTaskContract {
 
 **ui**存放**UI**相关的代码，例如：**Activity**、**Fragment**、**ViewModel**和**自定义View**等等，如图所示：
 
-![ui.png](https://github.com/TanJiaJunBeyond/AndroidGenericFramework/raw/master/screenshot/ui.png)
+![ui.png](https://github.com/carlshen/AndroidGenericFramework/raw/master/screenshot/ui.png)
 
 * **main**：**main（启动页和主页）**相关的**Activity**和**ViewModel**代码。
 * **recyclerview**：**RecyclerView**相关的代码，包括**BaseViewHolder**、**BaseViewType**、**NoDataViewType**、**BaseDataBindingAdapter**和**MultiViewTypeDataBindingAdapter**。
@@ -156,7 +156,7 @@ interface AddEditTaskContract {
 
 **utils**存放**工具文件**，如图所示：
 
-![utils.png](https://github.com/TanJiaJunBeyond/AndroidGenericFramework/raw/master/screenshot/utils.png)
+![utils.png](https://github.com/carlshen/AndroidGenericFramework/raw/master/screenshot/utils.png)
 
 * **ActivityExt**：存放**Activity**的**扩展函数**。
 * **BindingAdapters**：存放使用**DataBinding**的**@BindingAdapters**注解的代码。
@@ -174,7 +174,7 @@ interface AddEditTaskContract {
 
 如图所示：
 
-![PrefixAndroidGenericFrameworkFile.png](https://github.com/TanJiaJunBeyond/AndroidGenericFramework/raw/master/screenshot/PrefixAndroidGenericFrameworkFile.png)
+![PrefixAndroidGenericFrameworkFile.png](https://github.com/carlshen/AndroidGenericFramework/raw/master/screenshot/PrefixAndroidGenericFrameworkFile.png)
 
 * **AndroidGenericFrameworkAppGlideModule**：定义在**应用程序（Application）**内初始化**Glide**时要使用的一组**依赖项**和**选项**，要注意的是，在一个**应用程序（Application）**中**只能存在一个AppGlideModule**，如果是**库（Libraries）**就**必须**使用**LibraryGlideModule**。
 * **AndroidGenericFrameworkApplication**：本框架的**Application**。
@@ -186,7 +186,7 @@ interface AddEditTaskContract {
 
 如图所示：
 
-![test.png](https://github.com/TanJiaJunBeyond/AndroidGenericFramework/raw/master/screenshot/test.png)
+![test.png](https://github.com/carlshen/AndroidGenericFramework/raw/master/screenshot/test.png)
 
 * **data**：**FakeDataSource**用来创建**假的数据源**，**UserRemoteDataSourceTest（用户远程数据源测试类）**和**RepositoryRemoteDataSourceTest（GitHub仓库远程数据源测试类）**都是**模拟API调用**。
 * **utils**：存放**工具文件**的**测试类**。
