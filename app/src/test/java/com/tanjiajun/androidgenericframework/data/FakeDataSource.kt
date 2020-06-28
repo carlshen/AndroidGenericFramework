@@ -21,34 +21,34 @@ val userInfoDataJson = "{\n" +
         "\"created_at\": \"2017-02-17T06:28:25Z\",\n" +
         "\"disk_usage\": 46380,\n" +
         "\"email\": \"1120571286@qq.com\",\n" +
-        "\"events_url\": \"https://api.github.com/users/TanJiaJunBeyond/events{/privacy}\",\n" +
+        "\"events_url\": \"https://api.github.com/users/carlshen/events{/privacy}\",\n" +
         "\"followers\": 15,\n" +
-        "\"followers_url\": \"https://api.github.com/users/TanJiaJunBeyond/followers\",\n" +
+        "\"followers_url\": \"https://api.github.com/users/carlshen/followers\",\n" +
         "\"following\": 5,\n" +
-        "\"following_url\": \"https://api.github.com/users/TanJiaJunBeyond/following{/other_user}\",\n" +
-        "\"gists_url\": \"https://api.github.com/users/TanJiaJunBeyond/gists{/gist_id}\",\n" +
+        "\"following_url\": \"https://api.github.com/users/carlshen/following{/other_user}\",\n" +
+        "\"gists_url\": \"https://api.github.com/users/carlshen/gists{/gist_id}\",\n" +
         "\"gravatar_id\": \"\",\n" +
-        "\"html_url\": \"https://github.com/TanJiaJunBeyond\",\n" +
+        "\"html_url\": \"https://github.com/carlshen\",\n" +
         "\"id\": 25838119,\n" +
         "\"location\": \"中国广东省广州市\",\n" +
-        "\"login\": \"TanJiaJunBeyond\",\n" +
+        "\"login\": \"carlshen\",\n" +
         "\"name\": \"TanJiaJun\",\n" +
         "\"node_id\": \"MDQ6VXNlcjI1ODM4MTE5\",\n" +
-        "\"organizations_url\": \"https://api.github.com/users/TanJiaJunBeyond/orgs\",\n" +
+        "\"organizations_url\": \"https://api.github.com/users/carlshen/orgs\",\n" +
         "\"owned_private_repos\": 0,\n" +
         "\"private_gists\": 0,\n" +
         "\"public_gists\": 0,\n" +
         "\"public_repos\": 11,\n" +
-        "\"received_events_url\": \"https://api.github.com/users/TanJiaJunBeyond/received_events\",\n" +
-        "\"repos_url\": \"https://api.github.com/users/TanJiaJunBeyond/repos\",\n" +
+        "\"received_events_url\": \"https://api.github.com/users/carlshen/received_events\",\n" +
+        "\"repos_url\": \"https://api.github.com/users/carlshen/repos\",\n" +
         "\"site_admin\": \"false\",\n" +
-        "\"starred_url\": \"https://api.github.com/users/TanJiaJunBeyond/starred{/owner}{/repo}\",\n" +
-        "\"subscriptions_url\": \"https://api.github.com/users/TanJiaJunBeyond/subscriptions\",\n" +
+        "\"starred_url\": \"https://api.github.com/users/carlshen/starred{/owner}{/repo}\",\n" +
+        "\"subscriptions_url\": \"https://api.github.com/users/carlshen/subscriptions\",\n" +
         "\"total_private_repos\": 0,\n" +
         "\"two_factor_authentication\": false,\n" +
         "\"type\": \"User\",\n" +
         "\"updated_at\": \"2020-05-26T07:19:39Z\",\n" +
-        "\"url\": \"https://api.github.com/users/TanJiaJunBeyond\"\n" +
+        "\"url\": \"https://api.github.com/users/carlshen\"\n" +
         "}"
 
 val repositoryDataJson = "{\n" +
@@ -74,21 +74,21 @@ val userAccessTokenData = UserAccessTokenData(
 
 val userInfoData = UserInfoData(
         id = 25838119,
-        login = "TanJiaJunBeyond",
+        login = "carlshen",
         nodeId = "MDQ6VXNlcjI1ODM4MTE5",
         avatarUrl = "https://avatars1.githubusercontent.com/u/25838119?v=4",
         gravatarId = "",
-        url = "https://api.github.com/users/TanJiaJunBeyond",
-        htmlUrl = "https://github.com/TanJiaJunBeyond",
-        followersUrl = "https://api.github.com/users/TanJiaJunBeyond/followers",
-        followingUrl = "https://api.github.com/users/TanJiaJunBeyond/following{/other_user}",
-        gistsUrl = "https://api.github.com/users/TanJiaJunBeyond/gists{/gist_id}",
-        starredUrl = "https://api.github.com/users/TanJiaJunBeyond/starred{/owner}{/repo}",
-        subscriptionsUrl = "https://api.github.com/users/TanJiaJunBeyond/subscriptions",
-        organizationsUrl = "https://api.github.com/users/TanJiaJunBeyond/orgs",
-        reposUrl = "https://api.github.com/users/TanJiaJunBeyond/repos",
-        eventsUrl = "https://api.github.com/users/TanJiaJunBeyond/events{/privacy}",
-        receivedEventsUrl = "https://api.github.com/users/TanJiaJunBeyond/received_events",
+        url = "https://api.github.com/users/carlshen",
+        htmlUrl = "https://github.com/carlshen",
+        followersUrl = "https://api.github.com/users/carlshen/followers",
+        followingUrl = "https://api.github.com/users/carlshen/following{/other_user}",
+        gistsUrl = "https://api.github.com/users/carlshen/gists{/gist_id}",
+        starredUrl = "https://api.github.com/users/carlshen/starred{/owner}{/repo}",
+        subscriptionsUrl = "https://api.github.com/users/carlshen/subscriptions",
+        organizationsUrl = "https://api.github.com/users/carlshen/orgs",
+        reposUrl = "https://api.github.com/users/carlshen/repos",
+        eventsUrl = "https://api.github.com/users/carlshen/events{/privacy}",
+        receivedEventsUrl = "https://api.github.com/users/carlshen/received_events",
         type = "User",
         siteAdmin = false,
         name = "TanJiaJun",

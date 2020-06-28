@@ -3,3 +3,25 @@
 local.properties
 build
 .idea
+
+# Gradle
+.gradle/
+.gradle
+build/
+build
+
+# idea
+.idea/
+.idea
+
+.externalNativeBuild
+.cxx
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
