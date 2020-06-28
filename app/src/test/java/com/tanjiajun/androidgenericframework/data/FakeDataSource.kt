@@ -6,12 +6,12 @@ import com.tanjiajun.androidgenericframework.data.model.user.response.UserInfoDa
 import com.tanjiajun.androidgenericframework.utils.Language
 
 /**
- * Created by TanJiaJun on 2020/5/28.
+ * Created by carl shen on 2020/5/28.
  */
 val userAccessTokenDataJson = "{\n" +
-        "\"id\": 432604074,\n" +
+        "\"id\": 3993892,\n" +
         "\"token\": \"\",\n" +
-        "\"url\": \"https://api.github.com/authorizations/432604074\"\n" +
+        "\"url\": \"https://api.github.com/authorizations/3993892\"\n" +
         "}"
 
 val userInfoDataJson = "{\n" +
@@ -67,15 +67,15 @@ val repositoryDataJson = "{\n" +
         "}"
 
 val userAccessTokenData = UserAccessTokenData(
-        id = 432604074,
+        id = 3993892,
         token = "",
-        url = "https://api.github.com/authorizations/432604074"
+        url = "https://api.github.com/authorizations/3993892"
 )
 
 val userInfoData = UserInfoData(
         id = 25838119,
         login = "carlshen",
-        nodeId = "MDQ6VXNlcjI1ODM4MTE5",
+        nodeId = "MDQ6VXNlcjM5OTM4OTI=",
         avatarUrl = "https://avatars1.githubusercontent.com/u/25838119?v=4",
         gravatarId = "",
         url = "https://api.github.com/users/carlshen",
@@ -91,11 +91,11 @@ val userInfoData = UserInfoData(
         receivedEventsUrl = "https://api.github.com/users/carlshen/received_events",
         type = "User",
         siteAdmin = false,
-        name = "TanJiaJun",
+        name = "Shen carl",
         company = "",
         blog = "",
-        location = "中国广东省广州市",
-        email = "1120571286@qq.com",
+        location = "中国北京市",
+        email = "2926711810@qq.com",
         hireable = "",
         bio = "",
         publicRepos = 11,
@@ -114,7 +114,7 @@ val userInfoData = UserInfoData(
 
 val repositoryData = RepositoryData(
         id = 0,
-        name = "谭嘉俊",
+        name = "shen carl",
         description = "描述",
         language = Language.KOTLIN,
         starCount = 0,
